@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>しーしゃ喫茶店 梅田店｜梅田の夜カフェ＆シーシャ 18時〜翌4時</title>
+<meta name="description" content="大阪市北区堂山町、梅田駅から徒歩10分。18時から翌4時まで開いている夜カフェ＆シーシャ「しーしゃ喫茶店 梅田店」。完全個室完備で、Switchやカラオケも楽しめます。Google口コミ568件・★4.7。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#7a4fd0; --red-dark:#c4a6ff; --gold:#d4af6a; --cream:#120d1f; --ink:#f0ebfa; --gray:#b3a8cc;
+  --card:#1d1533; --line:#372a5c;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"Noto Sans JP",sans-serif;color:var(--ink);background:var(--cream);line-height:1.8;font-size:16px;padding-bottom:74px}
+img{max-width:100%;display:block}
+a{color:var(--red-dark)}
+.sample-band{position:fixed;top:0;left:0;right:0;z-index:60;background:#000;color:#fff;font-size:12px;text-align:center;padding:6px 10px;letter-spacing:.04em}
+.watermark{position:fixed;inset:0;z-index:55;pointer-events:none;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.watermark span{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:22vw;color:rgba(154,107,255,.06);transform:rotate(-18deg);white-space:nowrap}
+header.site{position:sticky;top:29px;z-index:50;background:rgba(18,13,31,.95);backdrop-filter:blur(6px);border-bottom:3px solid var(--red)}
+.header-in{max-width:960px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:10px 16px}
+.logo{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:20px;color:#fff;letter-spacing:.02em}
+.logo small{display:block;font-size:11px;color:var(--gray);font-weight:700;letter-spacing:.14em}
+.tel-btn{background:var(--red);color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:9px 16px;border-radius:999px}
+.hero{position:relative;background:#0a0616;color:#fff}
+.hero img{width:100%;height:62vh;min-height:340px;object-fit:cover;opacity:.94}
+.hero-txt{position:absolute;inset:auto 0 0 0;padding:56px 20px 26px;background:linear-gradient(transparent,rgba(6,3,16,.9) 55%)}
+.hero-in{max-width:960px;margin:0 auto}
+.hero .catch{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:clamp(25px,6.2vw,42px);line-height:1.4;text-shadow:0 2px 10px rgba(0,0,0,.5)}
+.hero .catch .g{color:var(--gold)}
+.hero .sub{margin-top:8px;font-size:15px;opacity:.95}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.badge{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.5);border-radius:999px;padding:5px 13px;font-size:13px;font-weight:700}
+.badge b{color:var(--gold)}
+.status-line{max-width:960px;margin:0 auto;padding:14px 20px 0}
+.status{display:inline-flex;align-items:center;gap:8px;background:var(--card);border:1.5px solid var(--red);color:#fff;font-weight:700;font-size:14px;border-radius:10px;padding:8px 14px}
+.status .dot{width:10px;height:10px;border-radius:50%;background:#3ecf6a}
+.status.closed .dot{background:#8d84a3}
+.stats{max-width:960px;margin:0 auto;padding:18px 20px 0;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+@media(max-width:640px){.stats{grid-template-columns:repeat(2,1fr)}}
+.stat{background:var(--card);border-radius:12px;padding:14px 8px;text-align:center;box-shadow:0 3px 12px rgba(0,0,0,.35)}
+.stat .num{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:24px;color:#fff;line-height:1.2}
+.stat .num small{font-size:13px}
+.stat .lbl{font-size:12px;color:var(--gray);font-weight:700;margin-top:2px}
+section{max-width:960px;margin:0 auto;padding:44px 20px 6px}
+h2{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:24px;color:#fff;margin-bottom:6px}
+h2 .en{display:block;font-size:11px;letter-spacing:.22em;color:var(--gold);font-weight:900}
+.lead{color:var(--gray);font-size:15px;margin-bottom:20px}
+.reasons{display:grid;gap:14px}
+@media(min-width:700px){.reasons{grid-template-columns:repeat(3,1fr)}}
+.reason{background:var(--card);border-radius:14px;padding:20px 18px;box-shadow:0 3px 14px rgba(0,0,0,.35);border-top:5px solid var(--gold)}
+.reason h3{font-size:17px;font-weight:700;margin-bottom:6px;color:var(--ink)}
+.reason p{font-size:14px;color:var(--gray)}
+.owner{background:var(--card);border-radius:14px;padding:20px;box-shadow:0 3px 14px rgba(0,0,0,.3);display:flex;gap:16px;align-items:flex-start}
+.owner .mark{flex:none;width:52px;height:52px;border-radius:50%;background:var(--red);color:#fff;font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:22px;display:flex;align-items:center;justify-content:center}
+.owner h3{font-size:16px;font-weight:700;margin-bottom:4px}
+.owner p{font-size:14px;color:var(--gray)}
+.menu-grid{display:grid;gap:18px}
+@media(min-width:700px){.menu-grid{grid-template-columns:repeat(3,1fr)}}
+.menu-card{background:var(--card);border-radius:16px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,.4)}
+.menu-card img{width:100%;height:190px;object-fit:cover}
+.menu-body{padding:16px 18px 18px}
+.menu-name{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:18px}
+.no1{display:inline-block;background:var(--red);color:#fff;font-size:11px;font-weight:700;border-radius:6px;padding:2px 8px;margin-left:6px;vertical-align:middle}
+.price{color:var(--red-dark);font-weight:800;font-size:19px;margin:4px 0 6px}
+.price small{font-size:12px;color:var(--gray);font-weight:500}
+.menu-desc{font-size:14px;color:var(--gray)}
+.note{font-size:12px;color:var(--gray);margin-top:12px}
+.price-table{width:100%;border-collapse:collapse;background:var(--card);border-radius:14px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,.3)}
+.price-table td{padding:11px 16px;font-size:15px;border-bottom:1px solid var(--line)}
+.price-table tr:last-child td{border-bottom:none}
+.price-table td.p{text-align:right;font-weight:700;color:#e6dcff;white-space:nowrap}
+.guide{background:var(--card);border:2px dashed var(--gold);border-radius:16px;padding:20px}
+.guide ol{margin-left:20px;font-size:15px}
+.guide li{margin-bottom:6px}
+.news{background:var(--card);border-radius:14px;padding:6px 20px;box-shadow:0 3px 14px rgba(0,0,0,.3)}
+.news li{list-style:none;padding:13px 0;border-bottom:1px solid var(--line);font-size:15px}
+.news li:last-child{border-bottom:none}
+.news .date{font-weight:700;color:#e6dcff;margin-right:8px;font-size:14px}
+.news .tag{display:inline-block;background:var(--gold);color:#3a2c07;font-size:11px;font-weight:700;border-radius:6px;padding:2px 8px;margin-right:8px}
+.ig-banner{display:flex;align-items:center;gap:16px;background:linear-gradient(120deg,#3b1d78,#7a4fd0);color:#fff;border-radius:16px;padding:22px;text-decoration:none}
+.ig-banner .t{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:19px}
+.ig-banner .s{font-size:13px;opacity:.92}
+.ig-banner .arrow{margin-left:auto;font-size:26px;font-weight:800}
+.info-table{width:100%;border-collapse:collapse;background:var(--card);border-radius:14px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,.3)}
+.info-table th,.info-table td{padding:13px 16px;font-size:15px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+.info-table th{width:32%;background:#2a1e4d;color:#d9cdf7;font-weight:700;white-space:nowrap}
+.info-table tr:last-child th,.info-table tr:last-child td{border-bottom:none}
+.map-btn{display:block;text-align:center;background:var(--red);color:#fff;text-decoration:none;font-weight:700;border-radius:12px;padding:14px;margin-top:16px}
+.gaikan{border-radius:16px;overflow:hidden;margin-top:18px;box-shadow:0 4px 16px rgba(0,0,0,.4)}
+.gaikan img{width:100%;height:230px;object-fit:cover}
+.gaikan figcaption{font-size:12px;color:var(--gray);background:var(--card);padding:8px 14px}
+footer{background:#0a0616;color:#cfc6e6;margin-top:52px;padding:34px 20px 30px}
+.foot-in{max-width:960px;margin:0 auto;font-size:13px}
+.foot-in .fname{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:18px;color:#fff;margin-bottom:8px}
+.foot-in a{color:var(--gold)}
+.foot-note{margin-top:16px;font-size:11px;color:#8d84a3;line-height:1.7}
+.action-bar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:1fr 1fr 1fr;background:#1a1230;border-top:1px solid var(--line);box-shadow:0 -4px 16px rgba(0,0,0,.4)}
+.action-bar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;padding:9px 4px 10px;text-decoration:none;color:var(--ink);font-size:12px;font-weight:700}
+.action-bar a.main{background:var(--red);color:#fff}
+.action-bar .ic{font-size:19px;line-height:1}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+.reveal.on{opacity:1;transform:none}
+</style>
+</head>
+<body>
+<div class="sample-band">これはサンプルです。無断使用は禁止しています</div>
+<div class="watermark" aria-hidden="true"><span>SAMPLE</span></div>
+
+<header class="site">
+  <div class="header-in">
+    <div class="logo">しーしゃ喫茶店 梅田店<small>大阪・梅田の夜カフェ＆シーシャ</small></div>
+    <a class="tel-btn" href="tel:0663609772">☎ 電話する</a>
+  </div>
+</header>
+
+<div class="hero">
+  <img src="hero.webp" alt="しーしゃ喫茶店 梅田店の個室。暖炉の映像が流れるモニターとテーブル席">
+  <div class="hero-txt">
+    <div class="hero-in">
+      <p class="catch">ゆっくりを、<span class="g">心ゆくまで</span>。<br>梅田最大級の夜カフェ＆シーシャ、深夜4時まで。</p>
+      <p class="sub">しーしゃ喫茶店 梅田店 ― 梅田駅から徒歩10分、堂山町・堂山プラザビル2階。完全個室で過ごす、夜だけの隠れ家です</p>
+      <div class="badges">
+        <span class="badge">Google口コミ <b>568件・★4.7</b></span>
+        <span class="badge">毎日 <b>18:00〜翌4:00</b></span>
+        <span class="badge"><b>完全個室</b>完備</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="status-line"><span class="status" id="status"><span class="dot"></span><span id="status-text">営業時間を確認中…</span></span></div>
+
+<div class="stats">
+  <div class="stat"><p class="num">★4.7</p><p class="lbl">Google評価</p></div>
+  <div class="stat"><p class="num">568<small>件</small></p><p class="lbl">Google口コミ</p></div>
+  <div class="stat"><p class="num">35<small>席</small></p><p class="lbl">個室・VIP個室あり</p></div>
+  <div class="stat"><p class="num">翌4<small>時</small></p><p class="lbl">深夜まで営業</p></div>
+</div>
+
+<section class="reveal">
+  <h2><span class="en">REASON</span>選ばれる理由</h2>
+  <p class="lead">梅田の夜に、扉の向こうのもうひとつの時間。その理由は3つあります。</p>
+  <div class="reasons">
+    <div class="reason">
+      <h3>完全個室で、自分たちだけの時間</h3>
+      <p>個室にはSwitchやカラオケ、YouTube・Netflixが見られるモニターを完備。周りを気にせず、ゲームに映画に会話に、思い思いの夜を過ごせます。</p>
+    </div>
+    <div class="reason">
+      <h3>梅田最大級の広さ</h3>
+      <p>全35席。カウンターやソファー席、座敷まで揃う、梅田エリア最大級の夜カフェ＆シーシャです。少人数の貸切（20名以下）にも対応しています。</p>
+    </div>
+    <div class="reason">
+      <h3>深夜4時まで、初心者も歓迎</h3>
+      <p>営業は18時から翌4時まで。終電を逃した夜にも寄れる長さです。シーシャが初めての方も、スタッフがフレーバー選びからお手伝いします。</p>
+    </div>
+  </div>
+</section>
+
+<section class="reveal">
+  <h2><span class="en">MENU</span>メニュー・料金</h2>
+  <p class="lead">煙と一緒に、ドリンクもスイーツもフードも。</p>
+  <div class="menu-grid">
+    <div class="menu-card">
+      <img src="shisha.webp" alt="フレーバーに使うフレッシュフルーツ" loading="lazy">
+      <div class="menu-body">
+        <p class="menu-name">シーシャ<span class="no1">看板</span></p>
+        <p class="menu-desc">フレーバーは、その日のフレッシュフルーツを使ったものも。1台を2人でシェアする楽しみ方も人気です。フレーバーの種類は店頭でご確認ください。</p>
+      </div>
+    </div>
+    <div class="menu-card">
+      <img src="drinks.webp" alt="いちごと練乳とドリンク2杯" loading="lazy">
+      <div class="menu-body">
+        <p class="menu-name">ドリンク＆スイーツ</p>
+        <p class="price">いちごと練乳 ¥1,650</p>
+        <p class="menu-desc">カフェラテやアイスコーヒーなどのドリンクに、甘酸っぱい「いちごと練乳」を添えて。ワインやカクテルなどのお酒も揃っています。</p>
+      </div>
+    </div>
+    <div class="menu-card">
+      <img src="food.webp" alt="パスタのフードメニュー" loading="lazy">
+      <div class="menu-body">
+        <p class="menu-name">フード</p>
+        <p class="menu-desc">パスタなどのフードメニューもご用意。夜食にも、しっかりめの一食にも。深夜の小腹を満たす一皿があります。</p>
+      </div>
+    </div>
+  </div>
+  <table class="price-table" style="margin-top:18px">
+    <tr><td>チャージ（お一人様）</td><td class="p">¥660〜</td></tr>
+    <tr><td>シーシャ1台＋ドリンク1杯プラン（2時間制）</td><td class="p">¥4,800</td></tr>
+    <tr><td>└ 食べログクーポン利用時</td><td class="p">¥3,500</td></tr>
+    <tr><td>VIP個室 席料（1時間・お一人様）</td><td class="p">¥1,100</td></tr>
+  </table>
+  <p class="note">※料金は食べログ掲載情報（2025年時点）をもとにしています。最新の料金・内容は店頭でご確認ください。ご予算の目安は3,000〜4,000円ほどです。写真は食べログの投稿写真を使用しています。</p>
+</section>
+
+<section class="reveal">
+  <h2><span class="en">ROOM</span>個室・お席のご案内</h2>
+  <p class="lead">過ごし方に合わせて選べる、席のバリエーション。</p>
+  <div class="reasons">
+    <div class="reason">
+      <h3>完全個室（4席×2室）</h3>
+      <p>扉を閉めれば、自分たちだけの空間。Switch・カラオケ・YouTube・Netflix対応のモニター付きで、デートにも友人同士の夜にも。</p>
+    </div>
+    <div class="reason">
+      <h3>VIP個室（1〜7名）</h3>
+      <p>特別な夜に選びたいVIP個室。ご予約の際は、1時間お一人様1,100円の席料がかかります。記念日や推し活の集まりにもどうぞ。</p>
+    </div>
+    <div class="reason">
+      <h3>フロア・カウンター</h3>
+      <p>カウンター4席のほか、ソファー席や座敷、カップルシートも。無料Wi-Fiと電源があるので、夜の作業にも使えます。</p>
+    </div>
+  </div>
+</section>
+
+<section class="reveal">
+  <h2><span class="en">GUIDE</span>初めての方へ</h2>
+  <p class="lead">予約なしでも、ふらっとどうぞ。</p>
+  <div class="guide">
+    <ol>
+      <li>ご予約は公式LINEかお電話（06-6360-9772）で受け付けています。個室は埋まりやすいので、週末は予約がおすすめです</li>
+      <li>チャージはお一人様660円〜。シーシャ1台を2人でシェアする楽しみ方もできます</li>
+      <li>お支払いはクレジットカード・電子マネー・QRコード決済（PayPayなど）が使えます</li>
+      <li>全席喫煙可の喫煙施設のため、20歳未満の方はご入店いただけません</li>
+      <li>定休日はなく、毎日18:00〜翌4:00で営業しています</li>
+    </ol>
+  </div>
+</section>
+
+<section class="reveal">
+  <h2><span class="en">NEWS</span>お知らせ</h2>
+  <ul class="news">
+    <li><span class="tag">営業</span>毎日18:00〜翌4:00で営業しています（L.O. シーシャ3:00／ドリンク3:45）</li>
+    <li><span class="tag">予約</span>ご予約は公式LINE・お電話で。VIP個室のご予約も受け付けています</li>
+    <li><span class="tag">お得</span>食べログに、シーシャ1台＋ドリンク1杯が3,500円になるクーポンを掲載中です</li>
+  </ul>
+</section>
+
+<section class="reveal">
+  <a class="ig-banner" href="https://www.instagram.com/shisha_umeda/" target="_blank" rel="noopener">
+    <div>
+      <p class="t">Instagramで最新情報をチェック</p>
+      <p class="s">@shisha_umeda ― 営業のお知らせや店内の様子を投稿しています</p>
+    </div>
+    <span class="arrow">›</span>
+  </a>
+</section>
+
+<section class="reveal" id="access">
+  <h2><span class="en">ACCESS</span>店舗情報</h2>
+  <table class="info-table">
+    <tr><th>店名</th><td>しーしゃ喫茶店 梅田店</td></tr>
+    <tr><th>住所</th><td>〒530-0027 大阪府大阪市北区堂山町1-24 堂山プラザビル 2F</td></tr>
+    <tr><th>アクセス</th><td>梅田駅から徒歩10分<br>中崎町駅・東梅田駅から徒歩7分</td></tr>
+    <tr><th>電話</th><td><a href="tel:0663609772">06-6360-9772</a></td></tr>
+    <tr><th>営業時間</th><td>18:00〜翌4:00（L.O. シーシャ 3:00／ドリンク 3:45）</td></tr>
+    <tr><th>定休日</th><td>年中無休</td></tr>
+    <tr><th>席数</th><td>35席（完全個室・VIP個室・カウンター・ソファー席・座敷）</td></tr>
+    <tr><th>設備</th><td>カラオケ／プロジェクター／無料Wi-Fi／電源／貸切可（20名以下）</td></tr>
+    <tr><th>お支払い</th><td>クレジットカード可／電子マネー可／QRコード決済可（PayPayなど）</td></tr>
+    <tr><th>駐車場</th><td>ビルの前に有料駐車場あり</td></tr>
+    <tr><th>Instagram</th><td><a href="https://www.instagram.com/shisha_umeda/" target="_blank" rel="noopener">@shisha_umeda</a></td></tr>
+  </table>
+  <a class="map-btn" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%97%E3%83%BC%E3%81%97%E3%82%83%E5%96%AB%E8%8C%B6%E5%BA%97+%E6%A2%85%E7%94%B0%E5%BA%97" target="_blank" rel="noopener">Googleマップで経路を見る</a>
+  <figure class="gaikan">
+    <img src="drinks.webp" alt="テーブルに並ぶドリンクといちご" loading="lazy">
+    <figcaption>個室のテーブル席。モニターのある部屋で、ドリンクとスイーツを囲む夜を。</figcaption>
+  </figure>
+</section>
+
+<footer>
+  <div class="foot-in">
+    <p class="fname">しーしゃ喫茶店 梅田店</p>
+    <p>〒530-0027 大阪府大阪市北区堂山町1-24 堂山プラザビル 2F<br>
+    TEL <a href="tel:0663609772">06-6360-9772</a>／Instagram <a href="https://www.instagram.com/shisha_umeda/" target="_blank" rel="noopener">@shisha_umeda</a></p>
+    <p class="foot-note">※このページはサンプルです。無断使用は禁止しています。<br>
+    掲載情報は、お店の公式Instagram・食べログ・Google等の公開情報をもとに作成しています。営業時間などの最新情報は、お店に直接ご確認ください。<br>
+    写真は食べログに投稿された店舗の実写真を使用しています。</p>
+  </div>
+</footer>
+
+<nav class="action-bar">
+  <a class="main" href="tel:0663609772"><span class="ic">☎</span>電話する</a>
+  <a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%97%E3%83%BC%E3%81%97%E3%82%83%E5%96%AB%E8%8C%B6%E5%BA%97+%E6%A2%85%E7%94%B0%E5%BA%97" target="_blank" rel="noopener"><span class="ic">📍</span>経路案内</a>
+  <a href="https://www.instagram.com/shisha_umeda/" target="_blank" rel="noopener"><span class="ic">📷</span>Instagram</a>
+</nav>
+
+<script>
+(function(){
+  // 営業時間 18:00〜翌4:00、年中無休
+  var now = new Date();
+  var mins = now.getHours()*60 + now.getMinutes();
+  var el = document.getElementById('status');
+  var tx = document.getElementById('status-text');
+  var open=false, msg='';
+  if(mins>=1080){ open=true; msg='営業中です（〜翌4:00）'; }
+  else if(mins<240){ open=true; msg='営業中です（〜4:00）'; }
+  else { msg='本日 18:00 から営業します'; }
+  tx.textContent = msg;
+  if(!open){ el.classList.add('closed'); }
+  // スクロールでふわっと表示
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('on'); io.unobserve(e.target); } });
+  },{threshold:.08});
+  document.querySelectorAll('.reveal').forEach(function(s){ io.observe(s); });
+})();
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"しーしゃ喫茶店 梅田店","servesCuisine":"カフェ・シーシャ","telephone":"06-6360-9772","priceRange":"¥3,000〜¥4,000","address":{"@type":"PostalAddress","postalCode":"530-0027","addressRegion":"大阪府","addressLocality":"大阪市北区","streetAddress":"堂山町1-24 堂山プラザビル 2F"},"openingHours":["Mo-Su 18:00-04:00"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","reviewCount":"568"}}
+</script>
+</body>
+</html>
